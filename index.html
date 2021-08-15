@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | IP Address Tracker</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <div class="page">
 
-  IP Address Tracker
+    <div class="header">
+      <h1>IP Address Tracker</h1>
+      <input type="text" id="ip" placeholder="Search for any IP address or domain">
+      <span class="submit-button"><input id="submit" type="image" src="images/icon-arrow.svg" value="Submit"></span>
+    </div>
 
-  Search for any IP address or domain
+    <div id="mapid" class=""></div>
 
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="display-bar">
+      <div class="info" >IP ADDRESS:<br /><span class="returns" id="ip-address">-</span></div>
+      <div class="vl"></div>
+      <div class="info" >LOCATION:<br /><span class="returns" id="location">-</span></div>
+      <div class="vl"></div>
+      <div class="info" >TIMEZONE:<br /><span class="returns" id="timezone">-</span></div>
+      <div class="vl"></div>
+      <div class="info" >ISP:<br /><span class="returns" id="isp">-</span></div>
+    </div>
+
+
+    <div class="attribute">
+      Made with ❤️ by Pranav Balakrishnan.
+    </div>
+
   </div>
+
+
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
