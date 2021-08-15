@@ -1,3 +1,5 @@
+
+
 var mymap = L.map('mapid').setView([13.0827, 80.2707], 13);
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoicHJhbmF2YmFsYWtyaXNobmFuIiwiYSI6ImNrc2Q1Y2hhcDA1dHoyb251czZqNjJ5OXIifQ.GAwEOUtXWEtB58rzohGM4g', {
     maxZoom: 18,
@@ -6,7 +8,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     zoomOffset: -1,
     accessToken: 'pk.eyJ1IjoicHJhbmF2YmFsYWtyaXNobmFuIiwiYSI6ImNrc2Q1Y2hhcDA1dHoyb251czZqNjJ5OXIifQ.GAwEOUtXWEtB58rzohGM4g'
 }).addTo(mymap);
-
+alert("In case the website doesnt work,please try again but with you AdBlock disabled.");
 document.getElementById("submit").addEventListener("click", function(){
   var ip = document.getElementById("ip").value;
   var api_key = "at_jf5ahyZziGKVfOwHb84eWrPL3I4Jc";
