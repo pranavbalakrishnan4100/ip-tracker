@@ -3,7 +3,7 @@ A website that provides information such as location and ISP of a given IP addre
 
 Users will be able to:
 - View the optimal layout for each page depending on their device's screen size
-- See hover states for all interactive elements on the page
 - Search for any IP addresses and see the key information and location
+- View their own IP address when searched with an empty input box.
 
 
